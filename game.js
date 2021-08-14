@@ -94,4 +94,13 @@ $(document).keypress(function (){
     }
 });
 
+$(document).click(function (){
+    if(!started){
+    nextSequence();
+    $("#level-title").text("level" + " " + level);
+    started=true;
+    }
+});
+
+
 
